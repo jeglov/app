@@ -1,4 +1,4 @@
-App::Application.configure do
+SampleApp::Application.configure do
   # Settings specified here will take precedence over those in config/application.rb
 
   # In the development environment your application's code is reloaded on
@@ -34,4 +34,7 @@ App::Application.configure do
 
   # Expands the lines which load the assets
   config.assets.debug = true
+
+  #rails ask me to do this. I don't know why =(
+    config.eager_load = false
 end

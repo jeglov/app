@@ -1,4 +1,4 @@
-App::Application.configure do
+SampleApp::Application.configure do
   # Settings specified here will take precedence over those in config/application.rb
 
   # Code is not reloaded between requests
@@ -19,6 +19,9 @@ App::Application.configure do
 
   # Generate digests for assets URLs
   config.assets.digest = true
+
+  #rails ask me to do this. I don't know why =(
+    config.eager_load = false
 
   # Defaults to nil and saved in location specified by config.assets.prefix
   # config.assets.manifest = YOUR_PATH
